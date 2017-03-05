@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+    <person id="1" type="2">
+        <name>Ivan</name>
+        <city>Moscow</city>
+    </person>
+    <person id="2" type="2">
+        <name>Vasily</name>
+        <city>Germany</city>
+    </person>
+    <person id="3" type="3">
+        <name>Nick</name>
+        <city>Russia</city>
+    </person>
+    <person id="4" type="1">
+        <name>Roman</name>
+        <city>Omsk</city>
+    </person>
+    <person id="5" type="2">
+        <name>Sergio</name>
+        <city>Italy</city>
+    </person>
+</people>
