@@ -1,4 +1,4 @@
-package parser;
+package com.company.parser;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;

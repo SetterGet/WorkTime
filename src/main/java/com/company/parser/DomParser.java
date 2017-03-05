@@ -1,4 +1,4 @@
-package parser;
+package com.company.parser;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
@@ -33,7 +33,8 @@ public class DomParser {
 
         try {
             DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-            document = documentBuilder.parse(new File("C:\\Users\\Dell\\IdeaProjects\\WorkTime\\src\\main\\resources\\file.xml"));
+            document = documentBuilder.parse(
+                    new File("C:\\Users\\Dell\\IdeaProjects\\WorkTime\\src\\main\\resources\\file.xml"));
 
             System.out.println(document.getDocumentElement().getChildNodes().getLength());
             System.out.println("Root element: " + document.getDocumentElement().getNodeName());
@@ -46,9 +47,9 @@ public class DomParser {
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
         } catch (SAXException e) {
-            e.printStackTrace();
+            System.out.println("Oops something was wrong");
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("File not found");
         }
     }
 
@@ -108,7 +109,7 @@ public class DomParser {
         } catch (TransformerConfigurationException e) {
             e.printStackTrace();
         } catch (TransformerException e) {
-            e.printStackTrace();
+            System.out.println("Oops saving failed");
         }
 
     }
